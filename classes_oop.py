@@ -60,7 +60,7 @@ class ElectricCar(Car):
             self.battery_size = battery_size
         else:
             print(f"You can not update the batter for less than {self.battery_size}-kwh")
-
+    # __maxspeed is not accessible even to child class
     # def udpate_maxspeed(self, speed):
     #     self.__maxpeed = speed
 

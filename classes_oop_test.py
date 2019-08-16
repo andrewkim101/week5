@@ -1,12 +1,15 @@
+# EXECUTION 
+
+# importing specific class from module
 # from classes_oop import * 
 from classes_oop import Car, ElectricCar
 
+# importing the whole module
 import hello
-# greet()
+# greet() # this will not work 
 hello.greet()
 
-
-# ------- default constructor
+# ------- default constructor (before creating the __init__ in the Car class )
 # camry = Car() 
 # camry.year = 2018
 # camry.make = 'toyota'
@@ -59,5 +62,8 @@ my_tesla.get_battery_size()
 
 my_tesla.set_maxspeed(210)
 
+# method(function) overriding, overriding inheritted function in child class
 camry.fill_gas_tank()
 my_tesla.fill_gas_tank()
+
+bmw = Car(2019, 'bmw', '530-i')
