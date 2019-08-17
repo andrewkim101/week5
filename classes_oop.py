@@ -40,6 +40,9 @@ class Car(): # in class name follow CamelCase format
 
     def fill_gas_tank(self):
         print("Filling your gas tank ...")
+    
+    def drive(self):
+        print('driving..')
 
 
 # INHERITANCE - inherits the contructor and the behaviour of the parent class 
@@ -59,7 +62,7 @@ class ElectricCar(Car):
         if battery_size >= self.battery_size :
             self.battery_size = battery_size
         else:
-            print(f"You can not update the batter for less than {self.battery_size}-kwh")
+            print(f"You can not update the battery for less than {self.battery_size}-kwh")
     # __maxspeed is not accessible even to child class
     # def udpate_maxspeed(self, speed):
     #     self.__maxpeed = speed

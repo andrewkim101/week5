@@ -2,6 +2,7 @@
 
 # importing specific class from module
 # from classes_oop import * 
+# import sys
 from classes_oop import Car, ElectricCar
 
 # importing the whole module
@@ -67,3 +68,4 @@ camry.fill_gas_tank()
 my_tesla.fill_gas_tank()
 
 bmw = Car(2019, 'bmw', '530-i')
+bmw.drive()
